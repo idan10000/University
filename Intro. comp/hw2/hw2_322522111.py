@@ -295,4 +295,4 @@ def test():
     if check_goldbach_stats(11, primes_set) != {1: 3, 2: 1}:
         print("error in check_goldbach_stats()")
 
-
+print(inc("10001111 "))
