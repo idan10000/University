@@ -1,21 +1,12 @@
 import time
 import sys
 
+
 ############
 # QUESTION 2
 ############
-def onlyOneRemain(stacks):
-    flag = False
-    for stack in stacks:
-        if stack is not 0:
-            if flag:
-                return False
-            flag = True
-    return True
-
-
 def can_win_nim(stacks):
-    if onlyOneRemain(stacks):
+    if len([0 for stack in stacks if stack != 0]) == 1:
         return True
     for i in range(len(stacks)):
         for num in range(1, stacks[i] + 1):
@@ -28,24 +19,24 @@ def can_win_nim(stacks):
 
 
 def can_win_nim_mem(stacks):
-    d = {}
+    d = {tuple([0 for i in range(len(stacks))]): False}
     return canWinNimMemRec(stacks, d)
 
+
 def canWinNimMemRec(stacks, dictionary):
-    if onlyOneRemain(stacks):
+    if len([0 for stack in stacks if stack != 0]) == 1:
         return True
+    tupStacks = tuple(stacks)
+    if tupStacks in dictionary:
+        return dictionary[tupStacks]
     for i in range(len(stacks)):
         for num in range(1, stacks[i] + 1):
-            tupStacks = tuple(stacks)
-            if tuple(stacks) in dictionary:
-                return dictionary[tupStacks]
-            else:
-                stacks[i] -= num
-                flag = canWinNimMemRec(stacks, dictionary)
-                stacks[i] += num
-                dictionary[tupStacks] = not flag
-                if not flag:
-                    return True
+            stacks[i] -= num
+            flag = canWinNimMemRec(stacks, dictionary)
+            stacks[i] += num
+            dictionary[tupStacks] = not flag
+            if not flag:
+                return True
     return False
 
 
@@ -61,26 +52,70 @@ def print_mat(mat):
 
 
 def concat_hor(mat1, mat2):
-    pass  # replace with your code
+    mergedList = list()
+    for i in range(len(mat1)):
+        mergedList.append(mat1[i] + mat2[i])
+    return mergedList
 
 
 def concat_vert(mat1, mat2):
-    pass  # replace with your code
+    mergedList = list()
+    for item in mat1:
+        mergedList.append(item)
+    for item in mat2:
+        mergedList.append(item)
+    return mergedList
 
 
 def inv(mat):
-    pass  # replace with your code
+    newMat = list()
+    for row in mat:
+        newRow = list()
+        for i in range(len(row)):
+            newRow.append(1 - row[i])
+        newMat.append(newRow)
+    return newMat
 
 
 def had(n):
-    pass  # replace with your code
+    if n == 0:
+        return [[0]]
+    lastMat = had(n - 1)
+    newMat = concat_vert(concat_hor(lastMat, lastMat), concat_hor(lastMat, inv(lastMat)))
+    return newMat
 
 
 ############
 # QUESTION 4
 ############
+def subsetSumSearchRec(L, s, dictionary):
+    if L == [] or s <= 0:
+        return None
+    if L[0] - s == 0:
+        return [L[0]]
+    tempTup = tuple([tuple(L), s])
+    if tempTup in dictionary:
+        return dictionary[tempTup]
+    else:
+        newList = L[1:]
+        withFirst = subsetSumSearchRec(newList, s-L[0], dictionary)
+        dictionary[tuple([tuple(newList), s-L[0]])] = withFirst
+        if withFirst is not None:
+            withFirst.append(L[0])
+            return withFirst
+        else:
+            withoutFirst = subsetSumSearchRec(newList, s, dictionary)
+            dictionary[tuple([tuple(newList), s])] = withoutFirst
+            if withoutFirst is not None:
+                return withoutFirst
+
+
+
+
 def subset_sum_search(L, s):
-    pass  # replace with your code
+    dictionary = {}
+    return subsetSumSearchRec(L, s, dictionary)
+
 
 
 ############
@@ -88,12 +123,49 @@ def subset_sum_search(L, s):
 ############
 
 def comp(s1, s2):
-    pass  # replace with your code
-
+    if len(s1) is 0 and len(s2) is 0:
+        return True
+    if len(s1) != len(s2) or s1[0] != s2[0]:
+        return False
+    return comp(s1[1:], s2[1:])
 
 def comp_ext(s1, s2):
-    pass  # replace with your code
-
+    if len(s1) == 0 and len(s2) != 0:
+        return False
+    if len(s1) is 0 and len(s2) is 0:
+        return True
+    pos = 0
+    if len(s2) is 0:
+        if s1[0] is '*':
+            for i in range(len(s1)):
+                if s1[i] == '*':
+                    pos += 1
+                else:
+                    break
+            if pos == len(s1):
+                return True
+        else:
+            return False
+    if s1[0] == '+':
+        return comp_ext(s1[1:], s2[1:])
+    if s1[0] == '*':
+        while s1[pos] == '*':
+            pos += 1
+        if pos == len(s1):
+            return True
+        starFlag = False
+        starPos = 0
+        for i in range(pos,len(s1)):
+            if s1[i] == '*':
+                starFlag = True
+                starPos = i
+                break
+        if starFlag:
+            return comp_ext(s1[pos:starPos], s2[pos-1:starPos-1]) and comp_ext(s1[starPos:], s2[-(len(s1)-starPos):])
+        else:
+            return comp_ext(s1[pos:], s2[-(len(s1)-pos):])
+    if s1[0] == s2[0]:
+        return comp_ext(s1[1:], s2[1:])
 
 ########
 # Tester
@@ -125,10 +197,10 @@ def test():
         print("Error in had")
 
     contains = lambda L, R: all(R.count(r) <= L.count(r) for r in R)
-    L = [1, 2, 4, 8, 16]
-
-    R = subset_sum_search(L, 13)
-    if R == None or not sum(R) == 13 or not contains(L, R):
+    # L = [1, 2, 4, 8, 16]
+    L = [1, 3, 8, 16]
+    R = subset_sum_search(L, 12)
+    if R == None or not sum(R) == 12 or not contains(L, R):
         print("Error in subset_sum_search")
 
     R = subset_sum_search(L, 32)
@@ -150,24 +222,29 @@ def test():
         print("Error in comp")
 
     if not comp_ext("abc+e", "abcde"):
-        print("Error in comp_ext")
+        print("Error in comp_ext1")
 
     if comp_ext("abc+", "abcdd"):
-        print("Error in comp_ext")
+        print("Error in comp_ext2")
 
     if not comp_ext("abc*d", "abcd"):
-        print("Error in comp_ext")
+        print("Error in comp_ext3")
 
     if not comp_ext("abc*d", "abcddd"):
-        print("Error in comp_ext")
+        print("Error in comp_ext4")
 
     if not comp_ext("a***", "a"):
-        print("Error in comp_ext")
+        print("Error in comp_ext5")
 
     if not comp_ext("abc+d*e", "abcxdzzzzzzzze"):
-        print("Error in comp_ext")
+        print("Error in comp_ext6")
 
     if comp_ext("abc+d*e", "abcdzzzze"):
-        print("Error in comp_ext")
-
-test()
+        print("Error in comp_ext7")
+n = 4
+L = [3 for i in range(n)]
+t1 = time.perf_counter()
+s = can_win_nim_mem(L)
+t2 = time.perf_counter()
+print(t2-t1)
+print(s)
