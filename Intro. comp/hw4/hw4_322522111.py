@@ -98,8 +98,8 @@ def subsetSumSearchRec(L, s, dictionary):
         return dictionary[tempTup]
     else:
         newList = L[1:]
-        withFirst = subsetSumSearchRec(newList, s-L[0], dictionary)
-        dictionary[tuple([tuple(newList), s-L[0]])] = withFirst
+        withFirst = subsetSumSearchRec(newList, s - L[0], dictionary)
+        dictionary[tuple([tuple(newList), s - L[0]])] = withFirst
         if withFirst is not None:
             withFirst.append(L[0])
             return withFirst
@@ -110,12 +110,9 @@ def subsetSumSearchRec(L, s, dictionary):
                 return withoutFirst
 
 
-
-
 def subset_sum_search(L, s):
     dictionary = {}
     return subsetSumSearchRec(L, s, dictionary)
-
 
 
 ############
@@ -129,17 +126,30 @@ def comp(s1, s2):
         return False
     return comp(s1[1:], s2[1:])
 
+
 def comp_ext(s1, s2):
-    if len(s1) == 0 and len(s2) != 0:
+    def compExact(s1, s2, firstIndex, secondIndex):
+        if firstIndex == len(s1) and secondIndex == len(s2):
+            return True
+        if firstIndex == len(s1):
+            return False
+        if secondIndex == len(s2) and s1[firstIndex] != "*":
+            return False
+        if s1[firstIndex] == "+":
+            return compExact(s1, s2, firstIndex + 1, secondIndex + 1)
+        if s1[firstIndex] == "*":
+            iSeq = False
+            if secondIndex < len(s2):
+                iSeq = compExact(s1, s2, firstIndex, secondIndex + 1)
+            eSeq = compExact(s1, s2, firstIndex + 1, secondIndex)
+            return iSeq or eSeq
+        if s1[firstIndex] == s2[secondIndex]:
+            return compExact(s1, s2, firstIndex + 1, secondIndex + 1)
         return False
-    if len(s1) is 0 and len(s2) is 0:
-        return True
-    if s1[-1] == '+':
-        return comp_ext(s1[:-1], s2[:-1])
-    if s1[-1] == '*':
-        return comp_ext(s1[:-1], s2[:len(s1)-1])
-    if s1[-1] == s2[-1]:
-        return comp_ext(s1[:-1], s2[:-1])
+
+    return compExact(s1, s2, 0, 0)
+
+
 ########
 # Tester
 ########
@@ -214,3 +224,4 @@ def test():
 
     if comp_ext("abc+d*e", "abcdzzzze"):
         print("Error in comp_ext")
+
