@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92ab480f-1578-4cf4-8017-82bf1a86976c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw3/hw3_322522111.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw4/hw4_322522111.py" afterDir="false" />
+    <list default="true" id="92ab480f-1578-4cf4-8017-82bf1a86976c" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/hw5/hw5_322522111.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Intro. comp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Intro. comp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/hw2_322522111.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/hw2_322522111.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw4/hw4_322522111.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw4/hw4_322522111.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,29 +45,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.hw4_322522111">
-    <configuration name="hw1_322522111" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Intro. comp" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hw1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hw1/hw1_322522111.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.hw5_322522111">
     <configuration name="hw2_322522111" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Intro. comp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,6 +112,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="hw5_322522111" type="PythonConfigurationType" factoryName="Python">
+      <module name="Intro. comp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\idanp\OneDrive\Documents\GitHub\University\Intro. comp\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hw5" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hw5/hw5_322522111.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Intro. comp" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,13 +156,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.hw5_322522111" />
+      <item itemvalue="Python.hw2_322522111" />
+      <item itemvalue="Python.hw3_322522111" />
+      <item itemvalue="Python.hw4_322522111" />
+      <item itemvalue="Python.testing" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.hw4_322522111" />
         <item itemvalue="Python.hw2_322522111" />
         <item itemvalue="Python.hw3_322522111" />
         <item itemvalue="Python.testing" />
-        <item itemvalue="Python.hw1_322522111" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +254,75 @@
       <workItem from="1576053112401" duration="3459000" />
       <workItem from="1576097508048" duration="382000" />
       <workItem from="1576254175822" duration="1064000" />
+      <workItem from="1576318978206" duration="1668000" />
+      <workItem from="1576330069660" duration="17199000" />
+      <workItem from="1576403567266" duration="167000" />
+      <workItem from="1576441236538" duration="1547000" />
+      <workItem from="1576484562566" duration="2049000" />
+      <workItem from="1576509866309" duration="31000" />
+      <workItem from="1576526721706" duration="1817000" />
+      <workItem from="1576616255619" duration="276000" />
+      <workItem from="1576658942875" duration="739000" />
+      <workItem from="1576676177991" duration="153000" />
+      <workItem from="1576786163121" duration="1090000" />
+      <workItem from="1576791922373" duration="228000" />
+      <workItem from="1576922266639" duration="114000" />
+      <workItem from="1576926502010" duration="1192000" />
+      <workItem from="1577028296326" duration="4611000" />
+      <workItem from="1577044021190" duration="1304000" />
+      <workItem from="1577478866010" duration="115000" />
+      <workItem from="1577553664899" duration="2802000" />
+      <workItem from="1577565989708" duration="2172000" />
+      <workItem from="1577694034535" duration="5031000" />
+      <workItem from="1577716568694" duration="4596000" />
+      <workItem from="1577738366915" duration="4039000" />
+      <workItem from="1577777652787" duration="2191000" />
+      <workItem from="1577780468441" duration="4019000" />
+      <workItem from="1577785432265" duration="53000" />
+      <workItem from="1577795731819" duration="7004000" />
+      <workItem from="1578063936374" duration="271000" />
+      <workItem from="1578064632650" duration="119000" />
+      <workItem from="1578081129030" duration="800000" />
+      <workItem from="1578133705972" duration="2259000" />
+      <workItem from="1578145645763" duration="2221000" />
+      <workItem from="1578239640221" duration="176000" />
+      <workItem from="1578321679933" duration="1486000" />
+      <workItem from="1578323267756" duration="612000" />
+      <workItem from="1578405958422" duration="7155000" />
+      <workItem from="1578430021425" duration="443000" />
+      <workItem from="1578487795301" duration="2212000" />
+      <workItem from="1578501213873" duration="451000" />
+      <workItem from="1578555718045" duration="34000" />
     </task>
+    <task id="LOCAL-00001" summary="New homrwork">
+      <created>1576319122974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576319122974</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Finished hw4">
+      <created>1576484989961</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576484989961</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Upgraded Q6b">
+      <created>1576792064166</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576792064166</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed Q6b">
+      <created>1577044696709</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577044696709</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,68 +341,86 @@
       </map>
     </option>
   </component>
-  <component name="WindowStateProjectService">
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1576319071397">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1576319071397" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1576256068898">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576256068898" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1576256068898">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1576256068898" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1576256068898">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1576256068898" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1576256068898">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1576256068898" />
-    <state width="1237" height="163" key="GridCell.Tab.1.bottom" timestamp="1576256068898">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576256068898" />
-    <state width="1237" height="163" key="GridCell.Tab.1.center" timestamp="1576256068898">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1576256068898" />
-    <state width="1237" height="163" key="GridCell.Tab.1.left" timestamp="1576256068898">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1576256068898" />
-    <state width="1237" height="163" key="GridCell.Tab.1.right" timestamp="1576256068898">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1576256068898" />
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1576319017252">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1576319017252" />
-    <state x="450" y="257" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576319030667">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="450" y="257" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1576319030667" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New homrwork" />
+    <MESSAGE value="Finished hw4" />
+    <MESSAGE value="update" />
+    <MESSAGE value="Upgraded Q6b" />
+    <MESSAGE value="Fixed Q6b" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Q6b" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/hw4/hw4_322522111.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="WindowStateProjectService">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1577044695675">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1577044695675" />
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1578414440395">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578414440395" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1578414440395">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1578414440395" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1578414440395">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1578414440395" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1578414440395">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1578414440395" />
+    <state width="1237" height="176" key="GridCell.Tab.1.bottom" timestamp="1578414440399">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578414440399" />
+    <state width="1237" height="176" key="GridCell.Tab.1.center" timestamp="1578414440399">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1578414440399" />
+    <state width="1237" height="176" key="GridCell.Tab.1.left" timestamp="1578414440399">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1578414440399" />
+    <state width="1237" height="176" key="GridCell.Tab.1.right" timestamp="1578414440399">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1578414440399" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1578555752335">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1578555752335" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1577566736250">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1577566736250" />
+    <state width="326" height="344" key="XDebugger.FullValuePopup" timestamp="1576346271863">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="326" height="344" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1576346271863" />
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1578405979191">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1578405979191" />
+    <state x="450" y="257" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578555809761">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="450" y="257" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1578555809761" />
+    <state x="0" y="0" width="739" height="680" key="find.popup" timestamp="1577044401745">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" width="739" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1577044401745" />
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1577555989781">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="383" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1577555989781" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Intro__comp$hw3_322522111.coverage" NAME="hw3_322522111 Coverage Results" MODIFIED="1575986918617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hw3" />
     <SUITE FILE_PATH="coverage/Intro__comp$hw2_322522111.coverage" NAME="hw2_322522111 Coverage Results" MODIFIED="1576254204032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hw2" />
     <SUITE FILE_PATH="coverage/Intro__comp$testing.coverage" NAME="testing Coverage Results" MODIFIED="1574522731790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hw2" />
     <SUITE FILE_PATH="coverage/Intro__comp$hw1_322522111.coverage" NAME="hw1_322522111 Coverage Results" MODIFIED="1574064674664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hw1" />
-    <SUITE FILE_PATH="coverage/Intro__comp$hw4_322522111.coverage" NAME="hw4_322522111 Coverage Results" MODIFIED="1576254424051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hw4" />
+    <SUITE FILE_PATH="coverage/Intro__comp$hw4_322522111.coverage" NAME="hw4_322522111 Coverage Results" MODIFIED="1577044729272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hw4" />
+    <SUITE FILE_PATH="coverage/Intro__comp$hw5_322522111.coverage" NAME="hw5_322522111 Coverage Results" MODIFIED="1578409386255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hw5" />
   </component>
 </project>

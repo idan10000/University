@@ -224,4 +224,3 @@ def test():
 
     if comp_ext("abc+d*e", "abcdzzzze"):
         print("Error in comp_ext")
-
