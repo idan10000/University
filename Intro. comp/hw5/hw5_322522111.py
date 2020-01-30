@@ -1,6 +1,4 @@
 import copy
-import random
-import string
 import time
 
 
@@ -447,11 +445,12 @@ class DLList():
 # a
 def substr_overlap(lst, k):
     out = list()
-    for i in range(len(lst)):
+    for i in range(len(lst) ):
         for j in range(i + 1, len(lst)):
             for a in range(len(lst[i]) - k + 1):
                 s_a = lst[i][a:a + k]
                 for b in range(len(lst[j]) - k + 1):
+                    s_b = lst[j][b:b + k]
                     if s_a == lst[j][b:b + k]:
                         out.append((i, j, a, b))
     return out
@@ -491,9 +490,9 @@ class Dict:
 
 # d
 def substr_overlap_hash1(lst, k):
-    strDict = Dict(len(lst)**2)
+    longestWord = len(max(lst, key=len))
+    strDict = Dict(longestWord * len(lst))
     out = list()
-
     for i in range(len(lst) - 1, -1, -1):
         for a in range(len(lst[i]) - k + 1):
             s_a = lst[i][a:a + k]
@@ -679,17 +678,3 @@ def test():
         print("error in substr_overlap_hash1")
     if sorted(substr_overlap_hash2(lst, k)) != sorted([(0, 1, 0, 1), (0, 1, 0, 2), (1, 2, 0, 2), (0, 2, 1, 3)]):
         print("error in substr_overlap_hash2")
-
-
-def randomString(n):
-    letters = string.ascii_lowercase
-    return ''.join(random.choice(letters) for i in range(n))
-
-
-def generateList(stringLen, numStrings):
-    lst = list()
-    for i in range(numStrings):
-        lst.append(randomString(stringLen))
-    return lst
-
-
